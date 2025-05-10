@@ -1,0 +1,80 @@
+    body {
+      background: linear-gradient(135deg, #000, #021f40);
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+    }
+    .hero {
+      padding: 60px 0;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+    .info-box p {
+      font-size: 1.1rem;
+      transition: transform 0.3s;
+    }
+    .info-box p:hover {
+      transform: translateX(5px);
+    }
+    .banner-img {
+    width: 100%;
+    height: auto;
+    max-height: 150px; /* Adjust this value to your liking */
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+    opacity: 50%;
+    }
+    .logo {
+      max-height: 60px;
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      border-radius: 50%;
+    }
+    .iframe-container {
+      display: none;
+      width: 100%;
+      margin-top: 30px;
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+    }
+    .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    }
+    .contact-info i {
+      margin-right: 8px;
+    }
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.05);
+      animation: fadeInUp 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
