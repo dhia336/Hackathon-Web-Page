@@ -1,4 +1,4 @@
-    body {
+body {
       background: linear-gradient(135deg, #000, #021f40);
       color: white;
       font-family: 'Segoe UI', sans-serif;
@@ -41,6 +41,7 @@
       top: 15px;
       left: 20px;
       border-radius: 50%;
+      /* filter: invert(1); Inverts the colors */
     }
     .iframe-container {
       display: none;
