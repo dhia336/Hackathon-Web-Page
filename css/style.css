@@ -111,6 +111,72 @@ footer {
   background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
+/* Prize Section Styles */
+.prize-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.prize-card:hover {
+  transform: translateY(-10px);
+}
+
+.prize-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.prize-badge.first {
+  background: linear-gradient(135deg, #ffd700, #ffa500);
+  color: #000;
+}
+
+.prize-badge.second {
+  background: linear-gradient(135deg, #C0C0C0, #E8E8E8);
+  color: #000;
+}
+
+.prize-badge.third {
+  background: linear-gradient(135deg, #CD7F32, #B8860B);
+  color: #000;
+}
+
+.text-silver {
+  color: #C0C0C0;
+}
+
+.text-bronze {
+  color: #CD7F32;
+}
+
+.fee-card {
+  background: rgba(13, 110, 253, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(13, 110, 253, 0.2);
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 500px;
+  transition: transform 0.3s ease;
+}
+
+.fee-card:hover {
+  transform: translateY(-5px);
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .hero-content h1 {
@@ -123,6 +189,20 @@ footer {
   
   .banner-container {
     height: 150px;
+  }
+  
+  .prize-card {
+    margin-bottom: 1rem;
+  }
+  
+  .prize-amount {
+    font-size: 2rem !important;
+  }
+  
+  .prize-badge {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
   }
 }
 
